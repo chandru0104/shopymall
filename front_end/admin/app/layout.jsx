@@ -1,13 +1,16 @@
-import { Children } from "react"
 
+import { WidthFull } from "@mui/icons-material";
+import Sidemenu from "./components/Sidemenu";
 
-
-
-function layout({Children}){
-    return
-    <html lang="en">
-     <body>{Children}</body>
-    </html>
+export default function RootLayout({ children }){
+    return(
+        <html lang="en">
+            <body style={{display:"flex"}}>
+                <Sidemenu />
+               <main >{children}</main>
+             
+            </body>
+        </html>
+    )
 }
 
-export default layout

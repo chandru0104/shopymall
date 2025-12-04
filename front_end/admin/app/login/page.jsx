@@ -1,11 +1,14 @@
+import{
+    Box,
+    Typography
+} from "@mui/material"
 
-
-
-
-function login(){
-    
-       return (<>
-            <p>Login page</p>
-       </>)
+export default function Login(){
+    return (
+        <>
+        <Box>
+            <Typography >Dashboard</Typography>
+        </Box>
+        </>
+    )
 }
-export default login
